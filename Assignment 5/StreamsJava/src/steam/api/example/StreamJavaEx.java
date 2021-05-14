@@ -39,9 +39,12 @@ public class StreamJavaEx {
 //		fruit.stream().sorted((f1,f2)->(int)(f2.getprice() - f1.getprice())).forEach(System.out::println);
 		//descending order
 //Q1		
-//		fruit.stream().filter((f1 -> f1.getCal() < 100 ))
-//		.sorted((f1,f2)->(int)(f2.getprice() - f1.getprice()))
-//		.forEach(System.out::println);
+		fruit.stream().filter((f1 -> f1.getCal() < 100 ))
+		.sorted((f1,f2)->(int)(f2.getprice() - f1.getprice()))
+		.forEach(System.out::println);
+		
+		
+		
 		
 //Q2
 //		fruit.stream().collect(Collectors.toMap(f1->f1.getname(), f1->f1.getcolor())).forEach(System.out::println);
